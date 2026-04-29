@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息卡片</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeBtn" class="theme-btn">🌙 切换主题</button>
+    </div>
+
+    <div class="container">
+        <h1 class="title">个人信息卡片</h1>
+        
+        <div class="card">
+            <div class="avatar-container">
+                <img id="avatar" src="" alt="头像" class="avatar">
+                <label for="avatar-input" class="upload-label">
+                    <span class="upload-icon">📷</span>
+                    <span class="upload-text">上传头像</span>
+                </label>
+                <input type="file" id="avatar-input" accept="image/*" class="avatar-input">
+            </div>
+
+            <div class="info-section">
+                <div class="input-group">
+                    <label for="name-input">姓名</label>
+                    <input type="text" id="name-input" class="info-input" value="周柏艺">
+                </div>
+
+                <div class="input-group">
+                    <label for="bio-input">个人简介</label>
+                    <textarea id="bio-input" class="info-input bio-input" rows="3">这是我的个人简介，很高兴认识你！</textarea>
+                </div>
+
+                <button id="saveBtn" class="save-btn">保存</button>
+            </div>
+
+            <div class="display-section">
+                <h2 class="display-title">我的信息</h2>
+                <p class="display-name">姓名：<span id="display-name">周柏艺</span></p>
+                <p class="display-bio">简介：<span id="display-bio">这是我的个人简介，很高兴认识你！</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
